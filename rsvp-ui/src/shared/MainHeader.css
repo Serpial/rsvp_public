@@ -1,0 +1,47 @@
+.main-header {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: white;
+}
+
+.main-header__container {
+    text-align: center;
+    padding: 150px 0;
+    background-size: cover;
+    background-color: #496142;
+    background-image: url("/house_grey_scale.jpg"), url("/house_grey_scale_smaller.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1.main-header__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1.main-header__text > span {
+    font-family: 'Luxurious Script', Georgia, Times, serif;
+    font-size: 100pt;
+    position: relative;
+}
+
+h2.main-header__text {
+    font-size: 18pt;
+}
+
+h3.main-header__text {
+    font-size: 16pt;
+}
+
+@media only screen and (max-width: 650px) {
+    h1.main-header__text {
+        flex-direction: column;
+    }
+
+    h1.main-header__text > span {
+        line-height: 0.8;
+    }
+}

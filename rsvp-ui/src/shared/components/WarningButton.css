@@ -1,0 +1,26 @@
+.button__warning {
+  color: white;
+  background-color: #d25f5f;
+  box-shadow: 3px 3px #202020;
+  border-color: #202020;
+  cursor: pointer;
+}
+
+.button__warning:hover {
+  /* 40% lighter from base */
+  background-color: #e49f9f;
+}
+
+.button__warning:active {
+  /* 40% darker than base */
+  background-color: #7e3939;
+}
+
+.button__warning:disabled {
+  color: #404040;
+  box-shadow: 3px 3px #909090;
+  border-color: #909090;
+
+  /* 90% from base */
+  background-color: #fbefef;
+}

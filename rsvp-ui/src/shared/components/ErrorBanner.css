@@ -1,0 +1,21 @@
+.error-banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  background-color: #ffd6d6;
+  box-shadow: 3px 3px #998080;
+
+}
+
+.error-banner > h2 {
+  font-weight: 600;
+  font-size: large;
+}
+
+.error-banner > p {
+  
+  font-size: 0.95em;
+}

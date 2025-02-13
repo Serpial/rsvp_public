@@ -1,0 +1,11 @@
+.cat__section {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 15rem 10rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .cat__section {
+    padding: 2rem 20px;
+  }
+}

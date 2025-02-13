@@ -1,0 +1,26 @@
+.button__secondary {
+  color: #496142;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px #496142;
+  border-color: #496142;
+  cursor: pointer;
+}
+
+.button__secondary:hover {
+  /* 10% darker from base */
+  background-color: #dddddd;
+}
+
+.button__secondary:active {
+  /* 20% darker than base */
+  background-color: #c4c4c4;
+}
+
+.button__secondary:disabled {
+  color: #404040;
+  box-shadow: 3px 3px #909090;
+  border-color: #909090;
+
+  /* 90% from base */
+  background-color: #edefec;
+}

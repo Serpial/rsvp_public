@@ -1,0 +1,44 @@
+.guest-card-display__container {
+  background-color: #6d8168;
+  color: #eeeeee;
+  border-radius: 3px;
+  padding: 1rem;
+  max-width: 17rem;
+  box-shadow: 3px 3px #202020;
+}
+
+.guest-card-display__container:last-child {
+  margin-bottom: 0;
+}
+
+.guest-card-display__content {
+  height: 10rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.guest-card-display__content > * {
+  margin: 0.2rem 0;
+}
+
+.guest-card-display__image {
+  padding: 2rem 0;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guest-card-display__content-category {
+  grid-column: 1 / 2;
+  font-weight: 600;
+}
+
+.guest-card-display__content-response {
+  grid-column: 2 / 3;
+}
+
+@media only screen and (max-width: 1000px) {
+  .guest-card-display__content > * {
+    margin: 0.1rem 0;
+  }
+}

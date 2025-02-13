@@ -1,0 +1,28 @@
+.word-entry {
+  overflow: hidden;
+  display: flex;
+  width: fit-content;
+  border-style: solid;
+  border-width: 1pt;
+  box-shadow: 3px 3px #496142;
+  border-color: #496142;
+  background-color: whitesmoke;
+}
+
+.word-entry > input {
+  width: 6em;
+  border-width: 0;
+  margin: 0;
+  padding: 5px;
+  background-color: whitesmoke;
+}
+
+.word-entry > input:focus {
+  outline: none;
+}
+
+.word-entry--disabled {
+  /* box-shadow: 3px 3px hsl(106, 19%, 32%); */
+  border-color: hsl(106, 19%, 70%);
+  box-shadow: 3px 3px hsl(106, 19%, 70%);
+}

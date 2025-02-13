@@ -1,0 +1,103 @@
+.guest-card-form__card {
+  all: unset;
+  background-color: #eeeeee;
+  position: relative;
+  border-radius: 3px;
+  padding: 1rem 5vw;
+  margin: 1rem 0;
+}
+
+.guest-card-form__container {
+  display: grid;
+}
+
+.guest-card-form__container > * {
+  margin: 0.2em 0;
+}
+
+.guest-card-form__container > *:first-child {
+  margin: initial;
+  margin-top: 0;
+}
+
+.guest-card-form__container > *:nth-last-child(2) {
+  margin: inherit;
+  margin-bottom: 0;
+}
+
+.guest-card-form__container > span,
+.guest-card-form__container > h3 {
+  grid-column: 1 / 2;
+}
+
+.guest-card-form__confirmation-buttons,
+.guest-card-form__menu-selection {
+  grid-column: 2 / 3;
+}
+
+.guest-card-form__reset-button {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  border-radius: 3px;
+  border: 1px solid #a7a7a7;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.guest-card-form__reset-button:disabled {
+  background-color: #bebebe;
+}
+
+.guest-card-form__confirmation-buttons {
+  width: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-column: 2;
+}
+
+.guest-card-form__confirmation-buttons > input {
+  display: none;
+}
+
+.guest-card-form__confirmation-buttons > label {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #a7a7a7;
+  background-color: #f8f8f8;
+}
+
+.guest-card-form_confirmed-yes-radio:checked + label {
+  background-color: rgb(152, 201, 152);
+}
+
+.guest-card-form_confirmed-no-radio:checked + label {
+  background-color: rgb(228, 137, 149);
+}
+
+.guest-card-form__menu-selection {
+  height: 2.25rem;
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .guest-card-form__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guest-card-form__confirmation-buttons {
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+services:
+  rsvp-service:
+    container_name: rsvp-service
+    build:
+      context: rsvp-service
+      dockerfile: Dockerfile
+    image: rsvp-service:latest
+    ports:
+      - "8081:8081"
+    env_file: rsvp-service/env.list
+    networks:
+      - shared-network
+  rsvp-ui:
+    container_name: rsvp-ui
+    build:
+      context: rsvp-ui
+      dockerfile: Dockerfile
+      args:
+        RSVP_ENV: development
+    image: rsvp-ui:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - shared-network
+
+networks:
+  shared-network:
+    driver: bridge

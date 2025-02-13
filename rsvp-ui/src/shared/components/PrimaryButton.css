@@ -1,0 +1,26 @@
+.button__primary {
+  color: white;
+  background-color: #496142;
+  box-shadow: 3px 3px #202020;
+  border-color: #202020;
+  cursor: pointer;
+}
+
+.button__primary:hover {
+  /* 40% lighter from base */
+  background-color: #92a08e;
+}
+
+.button__primary:active {
+  /* 40% darker than base */
+  background-color: #2c3a28;
+}
+
+.button__primary:disabled {
+  color: #404040;
+  box-shadow: 3px 3px #909090;
+  border-color: #909090;
+
+  /* 90% from base */
+  background-color: #edefec;
+}

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: rsvp-service
+  data:
+    mongodb:
+      database: rsvp
+
+security:
+  jwt:
+    access:
+      lifetime:
+        amount: 1
+        unit: Hours
+    refresh:
+      lifetime:
+        amount: 3
+        unit: Days
+
+server:
+  port: 8081

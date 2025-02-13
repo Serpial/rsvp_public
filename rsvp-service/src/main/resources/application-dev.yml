@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://rsvp-app:${database.mongodb.pass}@cluster0.jyig2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

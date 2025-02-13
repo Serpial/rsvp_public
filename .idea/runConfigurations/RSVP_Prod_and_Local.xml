@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RSVP-Prod and Local" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="dev.hutchison.rsvp.service.RsvpServiceApplication" />
+    <module name="rsvp-service" />
+    <option name="VM_PARAMETERS" value="-Dspring.profiles.active=prod,local -Ddatabase.mongodb.pass=&lt;pass&gt; -Dsecurity.jwt.secretKey=&lt;key&gt;" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="dev.hutchison.rsvp.service.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

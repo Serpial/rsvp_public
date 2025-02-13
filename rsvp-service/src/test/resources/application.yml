@@ -1,0 +1,15 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+security:
+  jwt:
+    secretKey: test-key
+    access:
+      lifetime:
+        amount: 1
+        unit: Hours
+    refresh:
+      lifetime:
+        amount: 1
+        unit: Hours

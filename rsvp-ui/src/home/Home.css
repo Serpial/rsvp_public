@@ -1,0 +1,132 @@
+.home-section {
+  padding: 2rem 30rem;
+  width: 100%;
+}
+
+.home-section h3 {
+  text-align: center;
+  font-size: 19pt;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.home-section__when h4 {
+  padding-top: 0.75em;
+}
+
+.home-section__when > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-section__when li {
+  padding: 0.5em;
+}
+
+.home-section__rsvp {
+  background-color: #eeeeee;
+}
+
+.home-section__where {
+  color: white;
+  background-color: #496142;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home-section__where h3 {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.home-section__where p > a {
+  color: white;
+  font-weight: bold;
+}
+
+.home-section__where-content {
+  padding: 0 50px;
+}
+
+.home-section__span--bold {
+  font-weight: bold;
+}
+
+.home-section__accommodation {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-section__accommodation-content {
+  max-width: 40vw;
+}
+
+.home-section__accommodation a {
+  font-weight: 500;
+  color: black;
+}
+
+.home-section__accommodation ul,
+.home-section__when ul {
+  padding-top: 1em;
+  padding-left: 2em;
+}
+
+.home-section__eating-canapes {
+  margin: 1.25em 0;
+}
+
+.home-section__eating > * {
+  padding: 1em 0;
+}
+
+.home-section__eating-canapes > h4 {
+  text-align: center;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-section__eating-canapes li {
+  all: unset;
+  display: block;
+  text-align: center;
+  padding: 0.75em 0;
+}
+
+@media only screen and (max-width: 1750px) {
+  .home-section__where {
+    flex-direction: column;
+    padding: 5vh 15vw;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .home-section {
+      padding: 2rem 10rem;
+    }
+
+    @media only screen and (max-width: 650px) {
+      .home-section {
+        padding: 2rem 15px;
+      }
+
+      .home-section__where {
+        padding: 5vh 0;
+      }
+
+      .home-section__accommodation {
+        margin-left: 5vw;
+        margin-right: 5vw;
+      }
+
+      .home-section__accommodation-content {
+        max-width: max-content;
+      }
+    }
+  }
+}

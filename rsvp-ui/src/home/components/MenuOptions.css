@@ -1,0 +1,100 @@
+.menu-options__tab-array-container {
+  width: 100%;
+}
+
+.menu-options__tab-array {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.2rem;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em 0;
+}
+
+.menu-options__tab-array > input {
+  all: unset;
+}
+
+.menu-options__tab-array > label {
+  height: 100%;
+  padding: 1.2rem 0;
+  width: 10rem;
+  font-size: small;
+  border-bottom: 5px solid #92a08e;
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.menu-options__tab-array > label > span {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu-option__tab-icon {
+  width: 24px;
+}
+
+.menu-options__tab-array > .menu-options__current-tab {
+  color: #eeeeee;
+  background-color: #496142;
+  border-bottom-color: #496142;
+}
+
+.menu-options__options {
+  display: flex;
+  max-width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: start;
+}
+
+.menu-options__options > p {
+  padding: 0.5em 0;
+}
+
+#children-tab {
+  background-image: url("/menu/children.svg");
+}
+
+#set-tab {
+  background-image: url("/menu/menu_book.svg");
+}
+
+#vegan-tab {
+  background-image: url("/menu/leaf.svg");
+}
+
+.menu-options__current-tab #children-tab {
+  background-image: url("/menu/children_white.svg");
+}
+
+.menu-options__current-tab #set-tab {
+  background-image: url("/menu/menu_book_white.svg");
+}
+
+.menu-options__current-tab #vegan-tab {
+  background-image: url("/menu/leaf_white.svg");
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-options__tab-array .menu-option__tab-content {
+    display: none;
+  }
+
+  .menu-options__options {
+    max-width: 40vw;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .menu-options__options {
+      max-width: 90vw;
+    }
+  }
+}
