@@ -16,10 +16,10 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/">
-            {/* <Route index element={<Home />} /> */}
-            {/* <Route path="with" element={<Home />} /> */}
-            {/* <Route path="response" element={<Response />} /> */}
-            <Route index element={<Sunset />} />
+            <Route index element={<Home />} />
+            <Route path="with" element={<Home />} />
+            <Route path="response" element={<Response />} />
+            {/* <Route index element={<Sunset />} /> */}
             <Route path="cat" element={<Cat />} />
             <Route path="page-not-found" element={<NoMatch />} />
             <Route path="*" element={<NoMatch />} />
